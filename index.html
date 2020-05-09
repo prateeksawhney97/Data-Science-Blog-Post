@@ -94,28 +94,7 @@
 
 <br>
 <br>
-    <!--#### CRISP-DM Process
-
-The steps required in the CRISP-DM process are:
-
--> Business Understanding
--> Data Understanding
--> Prepare Data
--> Data Modeling
--> Evaluate the Results
-
-##### Business Understanding
-
-##### Data Understanding
-
-##### Prepare Data
-
-##### Data Modeling
-
-##### Evaluate the Results
-
--->
-
+    
     <div class="sectiontitle">
       <h3 class="heading">Exploratory Visualization of the Dataset</h3>
      
@@ -163,6 +142,66 @@ The steps required in the CRISP-DM process are:
 
 <br>
 
+
+    <div class="sectiontitle">
+      <h1 class="heading">Questions asked in the Project!</h3>
+      
+    </div>
+    <p class="btmspace-50 justified sectiontitle">What is the no. of training, testing examples and the number of classes in the dataset?</p>
+    <ul>
+      <li>Number of Training Examples -> 34799</li>
+      <li>Number of Testing Examples -> 12630</li>
+      <li>The number of unique classes/labels in the data set is 43</li>
+    </ul>
+
+<br>
+<br>
+
+    <p class="btmspace-50 justified sectiontitle">What is the shape of the Updated Image in the Dataset?</p>
+    <ul>
+      <li>The shape of the input traffic sign image is (32, 32, 3)</li>
+    </ul>
+
+<br>
+<br>
+
+    <p class="btmspace-50 justified sectiontitle">How to visualize the first image of each class in the dataset?</p>
+    <ul>
+      <li>fig=plt.figure(figsize=(20, 20))</li>
+      <li>columns = 7</li>
+      <li>rows = 5</li>
+      <li>for i in range(1, columns*rows +1):</li>
+      <li>----X_few = X_train[y_train == i]</li>
+      <li>----fig.add_subplot(rows, columns, i)</li>
+      <li>----plt.imshow(X_few[0, :, :, :])</li>
+      <li>plt.show()</li>
+    </ul>
+
+<br>
+<br>
+
+    <p class="btmspace-50 justified sectiontitle">How to carry out the process of Normalization?</p>
+    <ul>
+      <li>def normalization(x_label):</li>
+      <li>----return x_label / 255 * 0.8 + 0.1</li>
+      <li>X_train =  normalization(X_train)</li>
+      <li>X_test =  normalization(X_test)</li>
+      <li>X_valid = normalization(X_valid)</li>
+    </ul>
+
+<br>
+<br>
+
+    <p class="btmspace-50 justified sectiontitle">How to do the training process in Deep Learning?
+    
+    <img src="images/training.png"></p>
+
+
+<br>
+<br>
+
+
+
     <div class="sectiontitle">
       <h1 class="heading">Results</h3>
       
@@ -177,6 +216,7 @@ The steps required in the CRISP-DM process are:
       
     </div>
     <p class="btmspace-50 justified sectiontitle"><a href="https://github.com/prateeksawhney97/Traffic-Sign-Classifier-Project-P3">Source Code</p>
+<p class="btmspace-50 justified sectiontitle"><a href="https://github.com/prateeksawhney97/Traffic-Sign-Classifier-Project-P3"><a href="https://prateeksawhney97.me" target="_blank">Prateek Sawhney</a></p>
     
   </main>
 </div>
